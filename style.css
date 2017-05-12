@@ -26,7 +26,7 @@ body {
 	width:40%;
 	height:80%;
 	float:left;
-	background-color:blue;
+	background-color:#ccc2c2;
 	margin:20px;
 	padding:10px;
 	margin-top:20px;
@@ -86,11 +86,8 @@ input[type="password"] {
 
 ul {
 	counter-reset:li;
-/* Initiate a counter */
 	list-style:none;
-/* Remove default numbering */
 	*list-style:decimal;
-/* Keep using default numbering for IE6/7 */
 	font:15px 'trebuchet MS','lucida sans';
 	padding:0;
 	margin-bottom:4em;
@@ -99,10 +96,9 @@ ul {
 
 ul ul {
 	margin:0 0 0 2em;
-/* Add some left margin for inner lists */
 }
 
-.rectangle-list a {
+.rectangle-list li {
 	position:relative;
 	display:block;
 	padding:.4em .4em .4em .8em;
@@ -114,11 +110,11 @@ ul ul {
 	transition:all .3s ease-out;
 }
 
-.rectangle-list a:hover {
+.rectangle-list li:hover {
 	background:#eee;
 }
 
-.rectangle-list a:before {
+.rectangle-list li:before {
 	content:counter(li);
 	counter-increment:li;
 	position:absolute;
@@ -133,7 +129,7 @@ ul ul {
 	font-weight:700;
 }
 
-.rectangle-list a:after {
+.rectangle-list li:after {
 	position:absolute;
 	content:'';
 	border:.5em solid transparent;
@@ -150,7 +146,7 @@ ul ul {
 
 video {
 	position:absolute;
-	bottom:15%;
+	bottom:5%;
 	right:5%;
 	width:500px;
 	height:375px;
@@ -158,8 +154,8 @@ video {
 
 div#inner {
 	position:absolute;
-	margin:0 auto;
-	bottom:15%;
+	
+	bottom:5%;
 	right:5%;
 	width:440px;
 	height:315px;
