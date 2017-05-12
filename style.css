@@ -20,24 +20,23 @@ body {
 	margin-right:10px;
 	margin-left:10px;
 	background-color:#fff;
-	
 }
 
 #left {
-	width: 40%;
-	height: 80%;
-	float: left;
-	background-color: blue;
-	margin: 20px;
-	padding: 10px;
-	margin-top: 20px;
+	width:40%;
+	height:80%;
+	float:left;
+	background-color:blue;
+	margin:20px;
+	padding:10px;
+	margin-top:20px;
 }
 
 #right {
-	width: 40%;
-	height: 100%;
-	float: left;
-	background-color: blue;
+	width:40%;
+	height:100%;
+	float:left;
+	background-color:blue;
 }
 
 .form-signin {
@@ -45,7 +44,7 @@ body {
 	max-width:420px;
 	padding:30px 38px 66px;
 	margin-top:10%;
-	margin-left: 34%;
+	margin-left:34%;
 	background-color:#eee;
 	border:3px dotted rgba(0,0,0,0.1);
 }
@@ -149,30 +148,30 @@ ul ul {
 	border-left-color:#fa8072;
 }
 
-video { 
-	        position: absolute; 
-	        bottom: 15%; 
-          right: 5%;
-          width: 404px; 
-          height: 280px;
-	    }
-	    
-        div#inner {
-          position: absolute;
-          margin: 0 auto;
-          bottom: 15%; 
-          right: 5%;
-          width: 404px; 
-          height: 280px;
-          border: 30px solid rgba(64,64,64, 0.5);
-          zindex: 1000;
-        }
-        
-        div#redline {
-          position: absolute;
-          top: 50%;
-          width: 344px;
-          height: 2px;
-          background-color: rgba(255, 0, 0, 0.3);
-          zindex: 1001;
-        }
+video {
+	position:absolute;
+	bottom:15%;
+	right:5%;
+	width:500px;
+	height:375px;
+}
+
+div#inner {
+	position:absolute;
+	margin:0 auto;
+	bottom:15%;
+	right:5%;
+	width:440px;
+	height:315px;
+	border:30px solid rgba(64,64,64,0.5);
+	zindex:1000;
+}
+
+div#redline {
+	position:absolute;
+	top:50%;
+	width:380px;
+	height:2px;
+	background-color:rgba(255,0,0,0.3);
+	zindex:1001;
+}
