@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <title>CPP Library Self-Checkout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+		function redirectMe() {
+		  window.location.replace("index.html");
+		  return false;
+		}
+	</script>
+</head>
+
+<body>
+    <div class="stretchedToMargin">
+        <form onsubmit="return redirectMe();">
+		  <input placeholder="Search" type="text">
+		  <input type="submit"/>
+		</form>
+    </div>
+</body>
+</html>
