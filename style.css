@@ -154,19 +154,19 @@ video {
 
 div#inner {
 	position:absolute;
-	
 	bottom:5%;
 	right:5%;
-	width:440px;
-	height:315px;
-	border:30px solid rgba(64,64,64,0.5);
+	width:500px;
+	height:375px;
+	
+	border:40px solid rgba(64,64,64,0.5);
 	zindex:1000;
 }
 
 div#redline {
 	position:absolute;
 	top:50%;
-	width:380px;
+	width:420px;
 	height:2px;
 	background-color:rgba(255,0,0,0.3);
 	zindex:1001;
