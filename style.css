@@ -151,10 +151,10 @@ ul ul {
 
 video { 
 	        position: absolute; 
-	        top: 0; 
-	        left: 0; 
-	        width: 320px;
-	        height: 240px;
+	        bottom: 15%; 
+          right: 5%;
+          width: 404px; 
+          height: 280px;
 	    }
 	    
         div#inner {
