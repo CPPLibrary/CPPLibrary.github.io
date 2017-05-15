@@ -24,7 +24,7 @@
 		
 		<video autoplay> </video>
 		<div id="inner"><div id="redline"> </div></div>
-		<div id="br"><input class="btn btn-lg btn-primary btn-block"type="button" onclick="location.href='receipt.html';" value="Done"></div>
+		<div id="br"><input class="btn btn-lg btn-primary btn-block"type="button" onclick="saveAndGo();" value="Done"></div>
 		<canvas style="display:none;"></canvas>
 	
 	</div>
@@ -37,12 +37,17 @@
         var list = document.querySelector('ul#decoded');
 
         var worker = new Worker('zbar-processor.js');
+        
+        // Default export is a4 paper, portrait, using milimeters for units
+		var doc = new jsPDF();
+
         worker.onmessage = function(event) {
             if (event.data.length == 0) return;
             var d = event.data[0];
             var entry = document.createElement('li');
             entry.appendChild(document.createTextNode(d[2] + ' (' + d[0] + ')'));
             list.appendChild(entry);
+            doc.text(entry, 10, 10)
         };
 
         function snapshot() {
@@ -58,6 +63,11 @@
             worker.postMessage(data);
         }
 
+		function saveAndGo() {
+			doc.save('a4.pdf');
+			location.href='receipt.html';
+		}
+		
         setInterval(snapshot, 500);
 
         navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
