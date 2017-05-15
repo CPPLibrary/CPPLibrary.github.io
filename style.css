@@ -183,15 +183,3 @@ div#redline {
 	background-color: blue;
 }
 
-.Row
-{
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-    border-spacing: 20;
-}
-.Column
-{
-    display: table-cell;
-    background-color: black;
-}
