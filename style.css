@@ -33,10 +33,12 @@ body {
 }
 
 #right {
-	width:40%;
-	height:100%;
-	float:left;
-	background-color:blue;
+	width:50%;
+	height:90%;
+	float:right;
+	background-color:#ccc2c2;
+	margin:10px;
+	padding:10px;
 }
 
 .form-signin {
@@ -146,7 +148,7 @@ ul ul {
 
 video {
 	position:absolute;
-	bottom:5%;
+	bottom:15%;
 	right:5%;
 	width:500px;
 	height:375px;
@@ -154,7 +156,7 @@ video {
 
 div#inner {
 	position:absolute;
-	bottom:5%;
+	bottom:15%;
 	right:5%;
 	width:500px;
 	height:375px;
@@ -170,4 +172,26 @@ div#redline {
 	height:2px;
 	background-color:rgba(255,0,0,0.3);
 	zindex:1001;
+}
+
+#br {
+	position:absolute;
+	bottom:2%;
+	right:5%;
+	width:500px;
+	height:15px;
+	background-color: blue;
+}
+
+.Row
+{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 20;
+}
+.Column
+{
+    display: table-cell;
+    background-color: black;
 }
