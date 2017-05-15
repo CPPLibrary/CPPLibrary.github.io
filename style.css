@@ -91,10 +91,13 @@ input[type="password"] {
 	border-top:0;
 	background:#c4e17f;
 	border-radius:5px;
-	background-image:-webkit-linear-gradient(left,#ffffff,#ffffff 12.5%,#edf7a1 12.5%,#edf7a1 25%,#ffff00 25%,#ffff00 37.5%,#92f06c 37.5%,#f0776c 50%,#db9dbe 50%,#db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4);
-	background-image:-moz-linear-gradient(left,#ffffff,#ffffff 12.5%,#edf7a1 12.5%,#edf7a1 25%,#ffff00 25%,#ffff00 37.5%,#f0776c 37.5%,#f0776c 50%,#db9dbe 50%,#db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4);
-	background-image:-o-linear-gradient(left,#ffffff,#ffffff 12.5%,#edf7a1 12.5%,#edf7a1 25%,#ffff00 25%,#ffff00 37.5%,#f0776c 37.5%,#f0776c 50%,#db9dbe 50%,#db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4);
-	background-image:linear-gradient(to right,#ffffff,#ffffff 12.5%,#edf7a1 12.5%,#edf7a1 25%,#ffff00 25%,#ffff00 37.5%,#f0776c 37.5%,#f0776c 50%,#db9dbe 50%,#db9dbe 62.5%,#c49cde 62.5%,#c49cde 75%,#669ae1 75%,#669ae1 87.5%,#62c2e4 87.5%,#62c2e4);
+	background-image:-webkit-linear-gradient(left,#105508,#105508 12.5%,#436f2e 12.5%,#436f2e 25%,#59aa3c 25%,#59aa3c 37.5%,#19c422 37.5%,#19c422 50%,#90d938 50%,#90d938 62.5%,#d8e24f 62.5%,#d8e24f 75%,#fff700 75%,#fff700 87.5%,#ffffc5 87.5%,#ffffc5);
+	
+	background-image:-moz-linear-gradient(left,#105508,#105508 12.5%,#436f2e 12.5%,#436f2e 25%,#59aa3c 25%,#59aa3c 37.5%,#19c422 37.5%,#19c422 50%,#90d938 50%,#90d938 62.5%,#d8e24f 62.5%,#d8e24f 75%,#fff700 75%,#fff700 87.5%,#ffffc5 87.5%,#ffffc5);
+	
+	background-image:-o-linear-gradient(left,#105508,#105508 12.5%,#436f2e 12.5%,#436f2e 25%,#59aa3c 25%,#59aa3c 37.5%,#19c422 37.5%,#19c422 50%,#90d938 50%,#90d938 62.5%,#d8e24f 62.5%,#d8e24f 75%,#fff700 75%,#fff700 87.5%,#ffffc5 87.5%,#ffffc5);
+	
+	background-image:linear-gradient(to right,#105508,#105508 12.5%,#436f2e 12.5%,#436f2e 25%,#59aa3c 25%,#59aa3c 37.5%,#19c422 37.5%,#19c422 50%,#90d938 50%,#90d938 62.5%,#d8e24f 62.5%,#d8e24f 75%,#fff700 75%,#fff700 87.5%,#ffffc5 87.5%,#ffffc5);
 }
 
 
@@ -191,7 +194,7 @@ div#redline {
 	bottom:2%;
 	right:5%;
 	width:500px;
-	height:15px;
-	background-color: blue;
+	height:50px;
+	
 }
 
