@@ -15,7 +15,7 @@
 		    <h3 class="form-signin-heading">Print Receipt?</h3>
 			  <hr class="colorgraph"><br>			 
 			<div class="btn-group" role="group" aria-label="Basic example">
-			  <button type="button" class="btn btn-secondary" style="margin-right: 10px">Print Receipt</button>
+			  <button type="button" class="btn btn-secondary" style="margin-right: 10px" onclick="print()">Print Receipt</button>
 			  <button type="button" class="btn btn-secondary" style="margin-right: 10px" onclick="myFunction()">Email Receipt</button>
 			  <button type="button" class="btn btn-secondary" onclick="location.href='index.html';">No Receipt</button>
 			</div>
@@ -23,9 +23,25 @@
 </div>
 
 <script>
-function myFunction() {
-    alert("Email functionality should be tied up to CPP's student DB through their Bronco ID. Try the Print option for now ");
-}
+	
+	function myFunction() {
+		
+		var doc = new jsPDF();
+		
+		if (localStorage.getItem('ISBNs')){
+	        var listContents = JSON.parse(localStorage.getItem('ISBNs'));
+	        //alert(localStorage.getItem('ISBNs'));
+	        
+	        for (var i = 0; i < listContents.length; ++i) {
+		        //alert(listContents[i]);
+		        doc.text(20,20,listContents[i]);
+		    }
+	    }
+	    doc.save('receipt.pdf');
+	}
+	function myFunction() {
+	    alert("Email functionality should be tied up to CPP's student DB through their Bronco ID. Try the Print option for now ");
+	}
 
 </script>
 </body>
