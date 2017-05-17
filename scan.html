@@ -65,17 +65,18 @@
 
 		function saveAndGo() {
 			// Default export is a4 paper, portrait, using milimeters for units
-			var doc = new jsPDF();
-
-			var ul = document.getElementById("decoded");
-			var items = ul.getElementsByTagName("li");
-			for (var i = 0; i < items.length; ++i) {
-			  alert(items[i].innerHTML);
-			  doc.text(20,20,items[i].innerHTML);
-			}
+// 			var doc = new jsPDF();
+// 
+// 			var ul = document.getElementById("decoded");
+// 			var items = ul.getElementsByTagName("li");
+// 			for (var i = 0; i < items.length; ++i) {
+// 			  //alert(items[i].innerHTML);
+// 			  doc.text(20,20,items[i].innerHTML);
+// 			}
 			
-			doc.save('receipt.pdf');
-			//window.location.replace("receipt.html");
+			//doc.save('receipt.pdf');
+			//localStorage.setItem( 'items', JSON.stringify(items) );
+			window.location.replace("receipt.html");
 			
 			return false;
 		}
