@@ -5,6 +5,7 @@
     <title>CPP Library Self-Checkout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -22,6 +23,7 @@
 		</form>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
 <script>
 	
 	function print() {
@@ -30,16 +32,14 @@
 		
 		if (localStorage.getItem('ISBNs')){
 	        var listContents = JSON.parse(localStorage.getItem('ISBNs'));
-	        //alert(localStorage.getItem('ISBNs'));
-	        
 	        for (var i = 0; i < listContents.length; ++i) {
-		        //alert(listContents[i]);
 		        doc.text(20,20,listContents[i]);
 		    }
 	    }
 	    
 	    doc.save('receipt.pdf');
 	}
+	
 	function myFunction() {
 	    alert("Email functionality should be tied up to CPP's student DB through their Bronco ID. Try the Print option for now ");
 	}
