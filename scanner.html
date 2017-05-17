@@ -12,14 +12,19 @@
 	<a href="javascript:genPDF()">Download PDF</a>
 	
     <script type="text/javascript">
+	    
+	    var doc = new jsPDF();
+	    
         function genPDF() {
 	        var ul = document.getElementById("decoded");
 			var items = ul.getElementsByTagName("li");
 			for (var i = 0; i < items.length; ++i) {
 			  // do something with items[i], which is a <li> element
 			  alert(items[i].innerHTML);
+			  doc.text(20,20,items[i].innerHTML);
 			}
-	}
+			doc.save('receipt.pdf');
+		}
     </script>
 </body>
 </html>
