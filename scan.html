@@ -66,8 +66,15 @@
         }
 
 		function saveAndGo() {
-			doc.save('a4.pdf');
-			window.location.replace("receipt.html");
+			var arrayLength = list.length;
+			
+			for (var i = 0; i < arrayLength; i++) {
+			    alert(myStringArray[i]);
+			    doc.text(20,20,myStringArray[i]);
+			}
+			
+			doc.save('receipt.pdf');
+			//window.location.replace("receipt.html");
 			
 			return false;
 		}
