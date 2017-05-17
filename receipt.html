@@ -24,7 +24,7 @@
 
 <script>
 	
-	function myFunction() {
+	function print() {
 		
 		var doc = new jsPDF();
 		
@@ -37,6 +37,7 @@
 		        doc.text(20,20,listContents[i]);
 		    }
 	    }
+	    
 	    doc.save('receipt.pdf');
 	}
 	function myFunction() {
