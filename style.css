@@ -91,13 +91,13 @@ input[type="password"] {
 	border-top:0;
 	background:#c4e17f;
 	border-radius:5px;
-	background-image:-webkit-linear-gradient(left,#105508,#105508 12.5%,#436f2e 12.5%,#436f2e 25%,#59aa3c 25%,#59aa3c 37.5%,#19c422 37.5%,#19c422 50%,#90d938 50%,#90d938 62.5%,#d8e24f 62.5%,#d8e24f 75%,#fff700 75%,#fff700 87.5%,#ffffc5 87.5%,#ffffc5);
+	background-image:-webkit-linear-gradient(left,#0d271b,#0d271b 12.5%,#225942 12.5%,#225942 25%,#046a3d 25%,#046a3d 37.5%,#377434 37.5%,#377434 50%,#768744 50%,#768744 62.5%,#A39733 62.5%,#A39733 75%,#DEB72F 75%,#DEB72F 87.5%,#F4CC96 87.5%,#F4CC96);
 	
-	background-image:-moz-linear-gradient(left,#105508,#105508 12.5%,#436f2e 12.5%,#436f2e 25%,#59aa3c 25%,#59aa3c 37.5%,#19c422 37.5%,#19c422 50%,#90d938 50%,#90d938 62.5%,#d8e24f 62.5%,#d8e24f 75%,#fff700 75%,#fff700 87.5%,#ffffc5 87.5%,#ffffc5);
+	background-image:-moz-linear-gradient(left,#0d271b,#0d271b 12.5%,#225942 12.5%,#225942 25%,#046a3d 25%,#046a3d 37.5%,#377434 37.5%,#377434 50%,#768744 50%,#768744 62.5%,#A39733 62.5%,#A39733 75%,#DEB72F 75%,#DEB72F 87.5%,#F4CC96 87.5%,#F4CC96);
 	
-	background-image:-o-linear-gradient(left,#105508,#105508 12.5%,#436f2e 12.5%,#436f2e 25%,#59aa3c 25%,#59aa3c 37.5%,#19c422 37.5%,#19c422 50%,#90d938 50%,#90d938 62.5%,#d8e24f 62.5%,#d8e24f 75%,#fff700 75%,#fff700 87.5%,#ffffc5 87.5%,#ffffc5);
+	background-image:-o-linear-gradient(left,#0d271b,#0d271b 12.5%,#225942 12.5%,#225942 25%,#046a3d 25%,#046a3d 37.5%,#377434 37.5%,#377434 50%,#768744 50%,#768744 62.5%,#A39733 62.5%,#A39733 75%,#DEB72F 75%,#DEB72F 87.5%,#F4CC96 87.5%,#F4CC96);
 	
-	background-image:linear-gradient(to right,#105508,#105508 12.5%,#436f2e 12.5%,#436f2e 25%,#59aa3c 25%,#59aa3c 37.5%,#19c422 37.5%,#19c422 50%,#90d938 50%,#90d938 62.5%,#d8e24f 62.5%,#d8e24f 75%,#fff700 75%,#fff700 87.5%,#ffffc5 87.5%,#ffffc5);
+	background-image:linear-gradient(to right,#0d271b,#0d271b 12.5%,#225942 12.5%,#225942 25%,#046a3d 25%,#046a3d 37.5%,#377434 37.5%,#377434 50%,#768744 50%,#768744 62.5%,#A39733 62.5%,#A39733 75%,#DEB72F 75%,#DEB72F 87.5%,#F4CC96 87.5%,#F4CC96);
 }
 
 
