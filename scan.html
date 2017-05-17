@@ -25,7 +25,7 @@
 		
 		<video autoplay> </video>
 		<div id="inner"><div id="redline"> </div></div>
-		<div id="br"><input class="btn btn-lg btn-primary btn-block"type="button" onclick="location.href='receipt.html';" value="Done"></div>
+		<div id="br"><input class="btn btn-lg btn-primary btn-block"type="button" onclick="return saveAndGo();" value="Done"></div>
 		<canvas style="display:none;"></canvas>
 	
 	</div>
@@ -67,7 +67,9 @@
 
 		function saveAndGo() {
 			doc.save('a4.pdf');
-			location.href='receipt.html';
+			window.location.replace("receipt.html");
+			
+			return false;
 		}
 		
         setInterval(snapshot, 500);
