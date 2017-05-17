@@ -5,12 +5,19 @@
     <title>Hello world</title>
 </head>
 <body>
+	<a href="javascript:genPDF()">Download PDF</a>
+	
     <script type="text/javascript">
-        var pdf = new jsPDF();
-        pdf.text(30, 30, 'Curriculum Vitae');
-        doc.line(30, 35, 60, 20); // horizontal line
-		doc.setLineWidth(0.5);
-        pdf.save('cv.pdf');
+        function genPDF() {
+	
+	var doc = new jsPDF();
+	
+	doc.text(20,20,'TEST Message!!');
+	doc.addPage();
+	doc.text(20,20,'TEST Page 2!');
+	doc.save('Test.pdf');
+	
+}
     </script>
 </body>
 </html>
