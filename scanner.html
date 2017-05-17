@@ -5,19 +5,21 @@
     <title>Hello world</title>
 </head>
 <body>
+	<ul id="decoded">
+			    <li>someting</li>
+			</ul>
+
 	<a href="javascript:genPDF()">Download PDF</a>
 	
     <script type="text/javascript">
         function genPDF() {
-	
-	var doc = new jsPDF();
-	
-	doc.text(20,20,'TEST Message!!');
-	doc.addPage();
-	doc.text(20,20,'TEST Page 2!');
-	doc.save('Test.pdf');
-	
-}
+	        var ul = document.getElementById("decoded");
+			var items = ul.getElementsByTagName("li");
+			for (var i = 0; i < items.length; ++i) {
+			  // do something with items[i], which is a <li> element
+			  alert(items[i].innerHTML);
+			}
+	}
     </script>
 </body>
 </html>
