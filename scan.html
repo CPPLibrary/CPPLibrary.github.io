@@ -49,7 +49,6 @@
             var entry = document.createElement('li');
             entry.appendChild(document.createTextNode(d[2])); //+ ' (' + d[0] + ')'
             list.appendChild(entry);
-            doc.text(20,20, d[2]));
         };
 
         function snapshot() {
@@ -66,12 +65,12 @@
         }
 
 		function saveAndGo() {
-			var arrayLength = list.length;
-			
-			for (var i = 0; i < arrayLength; i++) {
-			    alert(myStringArray[i]);
-			    doc.text(20,20,myStringArray[i]);
-			}
+// 			var arrayLength = list.length;
+// 			
+// 			for (var i = 0; i < arrayLength; i++) {
+// 			    alert(myStringArray[i]);
+// 			    doc.text(20,20,myStringArray[i]);
+// 			}
 			
 			doc.save('receipt.pdf');
 			//window.location.replace("receipt.html");
