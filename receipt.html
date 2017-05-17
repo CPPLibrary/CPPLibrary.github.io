@@ -29,9 +29,11 @@
 		var doc = new jsPDF();
 		if (localStorage.getItem('ISBNs')){
 	        var listContents = JSON.parse(localStorage.getItem('ISBNs'));
+	        
+	        var pos = 20;
 	        for (var i = 0; i < listContents.length; ++i) {
-		        //alert(listContents[i]);
-		        doc.text(20,20,listContents[i]);
+		        doc.text(20,pos,listContents[i]);
+		        pos = pos+10;
 		    }
 	    }
 	    doc.save('receipt.pdf');
